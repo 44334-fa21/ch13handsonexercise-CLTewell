@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tewell Lanwell Publishing Chapter13HandsOnExercise</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Verdana, Arial, sans-serif;
+		background-color: #00005D;
+	}
+
+	#wrapper {
+		background-color: #6AFB92;
+		color: #000066;
+		width: 90%;
+		margin: auto;
+		min-width: 450px;
+		max-width: 1020px;
+	}
+
+	header {
+		background-color: #C2B280;
+		color: #00005D;
+		padding: 10px;
+	}
+
+	header h1 {
+		padding-left: 200px;
+	}
+
+	header span {
+		font-style: italic;
+		font-weight: bold;
+		color: #00005D;
+		padding-right: 15px;
+		text-align: center;
+		display: block;
+	}
+
+	nav {
+		float: left;
+		width: 150px;
+		letter-spacing: 0.1em;
+		font-weight: bold;
+		position: relative;
+		/* for drop down menu */
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		border-bottom: 1px solid #ffffff;
+	}
+
+	nav a {
+		text-decoration: none;
+		display: block;
+		padding: 15px;
+	}
+
+	nav a:link {
+		color: #ffffff;
+	}
+
+	nav a:visited {
+		color: #eaeaea;
+	}
+
+	nav a:hover {
+		color: #869dc7;
+		background-color: #eaeaea;
+	}
+
+	/* Drop Down Menu*/
+	nav ul ul {
+		position: absolute;
+		left: 130px;
+		top: 80px;
+		background-color: #b3c7e6;
+		padding: 0px;
+		display: none;
+		text-align: left;
+	}
+
+	nav ul ul li {
+		border: 1px solid #00005d;
+		display: block;
+		width: 9em;
+		padding-left: 1em;
+		margin-left: 0;
+	}
+
+	nav li:hover ul {
+		display: block;
+	}
+
+	main {
+		background-color: #ffffff;
+		color: #000000;
+		padding: 10px 20px;
+		overflow: auto;
+	}
+
+	h2 {
+		color: #869dc7;
+		font-family: arial, sans-serif;
+		margin: 5px;
+	}
+
+	figure {
+		float: right;
+		margin: 10px;
+		padding: 5px;
+		background-color: #FFF;
+		border: 1px solid #CCC;
+		box-shadow: 5px 5px 5px #828282;
+	}
+
+	figcaption {
+		text-align: center;
+		font-size: .8em;
+		font-style: italic;
+	}
+
+	footer {
+		font-size: 70%;
+		text-align: center;
+		padding: 10px;
+		background-color: #869dc7;
+		clear: both;
+	}
+
+	/* Create Media Queries */
+	header,
+	main,
+	nav,
+	footer,
+	figure,
+	figcaption {
+		display: block;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		body {
+			margin: 0;
+			background-color: #869dc7;
+		}
+
+		#wrapper {
+			width: auto;
+			margin: 0;
+		}
+
+		main {
+			margin-left: 0;
+		}
+
+		nav {
+			float: none;
+			width: auto;
+		}
+
+		nav li {
+			display: inline-block;
+			padding: 0.5em;
+		}
+
+		nav ul {
+			text-align: center;
+		}
+
+		nav a {
+			border-style: none;
+		}
+
+		h1,
+		h2 {
+			font-size: 120%;
+		}
+
+		p {
+			font-size: 90%;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		#wrapper {
+			min-width: 0;
+		}
+
+		header h1 {
+			padding-left: 0;
+		}
+
+		h1,
+		h2 {
+			font-size: 100%;
+		}
+
+		span {
+			font-size: 80%;
+		}
+
+		figure {
+			display: none;
+		}
+
+		nav,
+		nav ul,
+		nav li {
+			padding: 0;
+		}
+
+		nav li {
+			display: block;
+		}
+
+		nav a {
+			display: block;
+			padding: 0.5em 0;
+			border-bottom: 2px ridge #00005D;
+		}
+	}
+
+	</style>
+</head>
+
+<body><div id="wrapper">
+	<header>
+		<h1>Lanwell Publishing</h1>
+		<span>Best ESL Books Around</span>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="manuals">Teachers Manuals</a></li>
+			<li><a href="textbook.html">Textbook</a></li>
+			<ul>
+						<li><a href="secondary">Secondary School</a></li>
+						<li><a href="adult">Adult Cont. Education</a></li>
+			</ul>
+			<li><a href="promotion">Promotion</a></li>
+			<ul>
+						<li><a href="deal">Buy 2 get 1 Free</a></li>
+						<li><a href="special">1/2 off for Students</a></li>
+			</ul>
+		</ul>
+	</nav>
+	<main>
+		<h2>Promotion</h2>
+		<p>This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence. This is a sentence.
+			<p>
+	</main>
+
+	</body>
+
+</html>
